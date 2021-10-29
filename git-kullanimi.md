@@ -1,11 +1,16 @@
-# Git Kullanımı
+> Projede Git ve GitHub kullanımı için çektiğimiz videoyu izleyebilir ve/veya aşağıdaki yazılı kılavuzu takip edebilirsin.
+> https://youtu.be/yPl6P1tXTH8
+
+---
+
+## Git Kurulumu
 Bilgisayarınızda Git kurulu değilse https://git-scm.com/downloads adresinden işletim sisteminize uygun şekilde kurulum adımlarını takip ederek kurulumu yapmanız gerekiyor.
 
 > Windows kullanıcıları terminal gerektiren işleri `PowerShell` veya sorun çıkarırsa `Git Bash`(Git kurulumunda yükleniyor) kullanarak adımları gerçekleştirebilir.
 
 ---
 
-## SSH Key Oluşturma & Ekleme
+## SSH Key Oluşturma & GitHub'a Ekleme
 GitHub'a commit gönderirken güvenlik için SSH anahtarınız olması ve bu anahtarın GitHub hesabınıza tanımlı olması gerekmektedir.
 
 > Bu adımlar Linux için yazılmıştır.\
@@ -94,6 +99,8 @@ $ git switch -c <BRANCH_ADI>
 $ git branch
 ```
 
+---
+
 ## Değişiklikleri Yayınlama
 > Dosyalardaki değişiklikleri kontrol etmek için
 ```
@@ -127,6 +134,8 @@ $ git push
 $ git push --set-upstream origin <BRANCH_ADI>
 ```
 
+---
+
 ## Pul Request Açma
 `Adım 1:` Tarayıcıda repoyu açtığınızda `Compare & pull request` butonuna tıklayarak yayınladığınız branch için pr açın
 
@@ -134,7 +143,7 @@ $ git push --set-upstream origin <BRANCH_ADI>
 
 `Adım 3:` Açıklama kısmına `#<ISSUE_NO>` ve gerekli açıklamaları yaz
 
-`Adım 4:` `Reviewers` kısmına PR'ı onaylayacak üstünü ekle
+`Adım 4:` `Reviewers` kısmına PR'ı onaylayacak ekip liderini ekle
 
 `Adım 5:` `Projects` kısmına issue'nun bulunduğu projeyi seç
 
@@ -142,4 +151,4 @@ $ git push --set-upstream origin <BRANCH_ADI>
 
 `Adım 7:` Eklenen değişikliklerin hangi issue için olduğunu `Linked issues` kısmında seç
 
-`Adım 8:` Geriye sadece üstünün, açtığın PR'ı inceleyip merge etmesi kalıyor. Senin başka işin kalmadı. Teşekkürler...
+`Adım 8:` Geriye sadece ekip liderinin, açtığın PR'ı inceleyip merge etmesi kalıyor. Senin başka işin kalmadı. Teşekkürler...
