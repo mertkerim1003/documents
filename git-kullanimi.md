@@ -1,7 +1,6 @@
-> Projede Git ve GitHub kullanımı için çektiğimiz videoyu izleyebilir ve/veya aşağıdaki yazılı kılavuzu takip edebilirsin.
-> https://youtu.be/yPl6P1tXTH8
+- Projede Git ve GitHub kullanımı için çektiğimiz videoyu izleyebilir ve/veya aşağıdaki yazılı kılavuzu takip edebilirsin.
+  - https://youtu.be/yPl6P1tXTH8
 
----
 
 ## Git Kurulumu
 Bilgisayarınızda Git kurulu değilse https://git-scm.com/downloads adresinden işletim sisteminize uygun şekilde kurulum adımlarını takip ederek kurulumu yapmanız gerekiyor.
