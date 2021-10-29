@@ -72,4 +72,74 @@ $ cat ~/.ssh/id_ed25519.pub
 
 ---
 
-## Çalışılacak Repoyu Çekme
+## Repoyu Klonlama
+Çalışacağın repoyu bilgisayarına klonla
+```
+$ git clone git@github.com:ProjectSOTAS/<REPO_ADI>.git
+```
+> SSH anahtarımız için parola isterse parolayı gir
+
+```
+$ cd <REPO_ADI>
+```
+
+---
+
+## Yeni Branch Açma
+```
+$ git switch -c <BRANCH_ADI>
+```
+> Mevcut branch'i kontrol edin
+```
+$ git branch
+```
+
+## Değişiklikleri Yayınlama
+> Dosyalardaki değişiklikleri kontrol etmek için
+```
+$ git status
+```
+
+> Commit atılacak değişiklikleri seçin
+```
+$ git add <DEĞİŞİKLİK_DOSYA_ADI>
+```
+
+> Seçilen değişikliklere commit ekle
+```
+$ git commit -m "COMMIT MESAJI"
+```
+
+> Eğer ilk defa commit ekliyorsanız config ayarları olmadığı için hata verecek
+```
+$ git config --global user.email <GITHUB_MAIL_ADRESIN>
+
+$ git config --global user.name <GITHUB_ADIN>
+```
+
+> Eklenen commitleri yayınlayın
+```
+$ git push
+```
+
+> Eğer kullandığınız branch'i daha önceden yayınlamadıysanız hata verecek
+```
+$ git push --set-upstream origin <BRANCH_ADI>
+```
+
+## Pul Request Açma
+`Adım 1:` Tarayıcıda repoyu açtığınızda `Compare & pull request` butonuna tıklayarak yayınladığınız branch için pr açın
+
+`Adım 2:` PR için issue ile ilgili başlık ekle
+
+`Adım 3:` Açıklama kısmına `#<ISSUE_NO>` ve gerekli açıklamaları yaz
+
+`Adım 4:` `Reviewers` kısmına PR'ı onaylayacak üstünü ekle
+
+`Adım 5:` `Projects` kısmına issue'nun bulunduğu projeyi seç
+
+`Adım 6:` Herşey hazır ise `Create pull request` butonuna bas
+
+`Adım 7:` Eklenen değişikliklerin hangi issue için olduğunu `Linked issues` kısmında seç
+
+`Adım 8:` Geriye sadece üstünün, açtığın PR'ı inceleyip merge etmesi kalıyor. Senin başka işin kalmadı. Teşekkürler...
