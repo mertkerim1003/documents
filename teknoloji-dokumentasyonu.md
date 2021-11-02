@@ -1,5 +1,7 @@
 # Teknoloji dökümentasyonu
 
+Bu dokümantasyon kullanılan teknolojileri ve neden kullanıldıklarını açıklar.
+
 ---
 
 # Front-end
@@ -14,9 +16,17 @@ Angular için koyabilirsiniz daha yazmadıysanız
  
 ## Angular Material
 
+- Angular'ın resmi olarak geliştirdiği bir kütüphanedir.
 
+- Google'ın Material Design tasarımını Angular componentleri olarak karşımıza çıkarır.
 
-## CSS/SCSS  
+- Ortak bir tasarım sistemine sahip olabilmek için tercih ettik.
+
+## SCSS  
+
+- Kendimiz component geliştirdiğimiz zaman CSS'in biraz daha güzeli olan SCSS'i kullanıcaz.
+
+- SCSS içinde fonksiyonlar oluşturabilir daha gelişmiş değişken sistemleri kullanabiliyoruz.
 
 # Back-end
 
@@ -84,9 +94,11 @@ Sağ taraftaki tasarımda ise ortak katmanlı mimaride iş mantıklarını manip
 Bu prensipte bir kod bloğunun, sınıfının, metodunun ya da özelliğin değişimi tek bir sebepten dolayı yapılabilir. Bu durumu gene yukarıda Şekil 1' de çizdiğimiz yapı üzerinden açıklamaya çalışalım. Sol taraftaki tasarımda persistence ya da domain katmandaki bir değişiklik beraberinde birden fazla katmanda değişikliğe sebep olurken, sağ taraftaki tasarımda domain ya da persistence katmanındaki değişiklik sadece kendi tarafında değişikliğe sebebiyet vermektedir.<br /><br />
 
 - ### Temel bileşenleri
+
 1. Domain
 Domain için sadece iş kurallarından oluşan, bu kuralların entity’ler vasıtasıyla tanımlandığı ve işlendiği, uygulamanın hiçbir katmanı ile bağımlılığı olmayan aslında uygulamanın temel işlevinin ne olduğunu anlamamızı kolaylaştıran saf kod blokları diyebiliriz. ”Single Responsibility” prensibinde yukarıda anlattığımız gibi dış katmanlardaki herhangi bir değişiklik domain’i etkilemez.
 Domain veritabanı, web, UI, job vb dış dünyaya açık olan akışlardan izole edilmelidir.<br /><br />
+
 2. Use-Case
 İş kurallarını etkileyen, uygulamayı çağıran birincil portların kullandığı senaryoları içeren ve ortak katmanlı mimaride gördüğümüz servis kısmında bulunan senaryoların tek tek ayrıştırılmış hali diyebiliriz.
 Hexagonal mimaride bir use-case aşağıdaki 4 temel görevi yerine getirir:
@@ -95,11 +107,13 @@ Domainde tanımladığımız iş kurallarının validasyonunu sağlar ve bunu do
 Input değerlerine göre domaini manipüle eder.
 Domain objesinin durumu güncellendikten sonra çıkış verisini oluşturur.
 Bir use-case, domainde olduğu gibi uygulamanın core katmanında bulunur ve dışardaki katmanlarla bağımlılığı bulunmaz.<br /><br />
+
 3. Input & Output Ports
 Domain ve use-case ’ler hexagonal mimaride uygulamanın core tarafını oluşturur. Uygulamanın dışarı ile iletişimi input ve output portları üzerinden gerçekleşir.
 Bir input port, uygulamadaki use-case tarafından implement edilen basit bir arayüzü ifade eder. Dış katmanda bulunan bir input adaptör tarafından çağrılarak uygulamanın dışarı ile iletişimene olanak sağlar.
 Bir output portu, uygulamanın dışarıdan bir şeye ihtiyaç duyması halinde use-case tarafından çağrılabilen basit bir arayüzdür. Örneğin, veritabanı erişimini yapan ve use-case ’in ihtiyacı olan veriyi elde etmemizi sağlayan basit bir arayüzü düşünebiliriz. Output port dış katmanda bulunan bir output adaptör tarafından implement edilir. Böylece use-case ’in dış ortama bağlılığı ortadan kalkmış olur.
 Ayrıca input ve output portları sayesinde bir sisteme verinin nerden geldiğini ve sistem tarafından oluşturulan verilerin nasıl dışarıya aktarıldığını rahatlıkla tespit edebiliriz.<br /><br />
+
 4. Input & Output Adapters
 Hexagonal mimaride adaptörler en dıştaki katmanları oluşturur. Uygulamanın çekirdeğinin bir parçası değillerdir fakat input ve output portları üzerinden dolaylı olarak uygulama ile iletişime geçerler.
 Input adaptörlere bir web arayüzü ya da bir job örnek verilebilir. Bu adaptörler input portlarını çağırarak uygulamanız üzerinde bir istek oluştururlar.
