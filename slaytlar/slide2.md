@@ -7,7 +7,7 @@ output:
     colortheme: "dolphin"
     fonttheme: "structurebold"
 date:
-- Kasım 3, 2021
+- Kasım 2, 2021
 
 ---
 
