@@ -1,12 +1,13 @@
 site_name: Project SOTAS
 site_url: https://sotas.github.io/
+
 theme: 
   name: material
   locale: en
   language: en
 
-  logo: sotasDocs/assets/logo.png
-  favicon: sotasDocs/assets/logo.png
+  logo: ../assets/logo.png
+  favicon: ../assets/logo.png
   icon:
     repo: fontawesome/brands/github
 
@@ -17,13 +18,14 @@ theme:
     # - navigation.indexes
     - navigation.top
 
-
   palette:
     scheme: default
     primary: cyan
     accent: yellow
 
-docs_dir: ../
+
+docs_dir: ./docs
+site_dir: ./build
 
 strict: true
 
