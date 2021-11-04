@@ -1,13 +1,13 @@
 site_name: Project SOTAS
-site_url: https://sotas.github.io/
+site_url: https://projectsotas.github.io/
 
 theme: 
   name: material
   locale: en
   language: en
 
-  logo: ../assets/logo.png
-  favicon: ../assets/logo.png
+  # logo: logo.png
+  # favicon: ../assets/logo.png
   icon:
     repo: fontawesome/brands/github
 
@@ -37,5 +37,5 @@ extra:
   generator: false
 
 repo_url: https://github.com/ProjectSOTAS
-repo_name: projectSOTAS
-edit_uri: documents/blob/master/
+repo_name: Project SOTAS
+edit_uri: documents/blob/master/docs/
