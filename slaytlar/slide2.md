@@ -1,6 +1,5 @@
 ---
-title:
-- SOTAS (Scoring Others' Tasks System)
+title: SOTAS(Scoring Others' Tasks System)
 output:
   beamer_presentation:
     theme: "AnnArbor"

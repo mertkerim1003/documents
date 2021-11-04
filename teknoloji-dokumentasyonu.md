@@ -1,4 +1,4 @@
-# Teknoloji dökümentasyonu
+# Teknoloji Dokümentasyonu
 
 Bu dokümantasyon kullanılan teknolojileri ve neden kullanıldıklarını açıklar.
 
@@ -43,9 +43,9 @@ projemizde güncellenebilecek.
 
  - ### Neden Quarkus Kullanmalı?
 
- - 1. Memory consumption değerleri daha az, düşünün ki daha az memory ile aynı işi yapmak, çok iyi bir tercih sebebi olabilir.
+    1. Memory consumption değerleri daha az, düşünün ki daha az memory ile aynı işi yapmak, çok iyi bir tercih sebebi olabilir.
 
- - 2. Cloud tarafında Serverless mimarisinin ortaya çıkmasının en önemli nedenlerinden biri Cost Reduction yapmaktı. Gerektiğinde
+    2. Cloud tarafında Serverless mimarisinin ortaya çıkmasının en önemli nedenlerinden biri Cost Reduction yapmaktı. Gerektiğinde
 kaynaklar ayakta olmalı, kapalı olduğunda ise; ihtiyaç duyulduğunda çok hızlı bir şekilde cevap vermesiydi. Java tarafında kalmak
 isteyen organizasyonlar için boot time ne kadar değerli olduğunu tahmin edebiliyorsunuzdur işte bu yüzden Quarkus biçilmiş kaftan olabilir.
 
@@ -88,21 +88,21 @@ diğer katmanlarla iç içe olacak şekilde tasarlandığı bu yüzden sistemini
 birbirine bağımlı şekilde davranmasına yol açan mimarilerin aksine, katmanlar arasındaki bağımlılığı “domain” dediğimiz tamamen iş mantıklarının olduğu
 en içte bulunan katmana doğru bağımlı olacak şekilde tasarladığımız Domain-Driver Design mimarisinin özelleşmiş bir versiyonudur
 
-- ### Temel bileşenleri
+#### *Temel Bileşenleri*
 
-### 1. Domain
+##### *1. Domain*
 
 Domain için sadece iş kurallarından oluşan, bu kuralların entity’ler vasıtasıyla tanımlandığı ve işlendiği, uygulamanın hiçbir katmanı ile bağımlılığı
 olmayan aslında uygulamanın temel işlevinin ne olduğunu anlamamızı kolaylaştıran saf kod blokları diyebiliriz.
 
-### 2. Use-Case
+##### *2. Use-Case*
 
 İş kurallarını etkileyen, uygulamayı çağıran birincil portların kullandığı senaryoları içeren ve ortak katmanlı mimaride gördüğümüz servis
 kısmında bulunan senaryoların tek tek ayrıştırılmış hali diyebiliriz.
 
 Bir use-case, domainde olduğu gibi uygulamanın core katmanında bulunur ve dışardaki katmanlarla bağımlılığı bulunmaz.
 
-### 3. Input & Output Ports
+##### *3. Input & Output Ports*
 
 Uygulamanın dışarı ile iletişimi input ve output portları üzerinden gerçekleşir.
 Bir input port, uygulamadaki use-case tarafından implement edilen basit bir arayüzü ifade eder. Dış katmanda bulunan bir input adaptör
@@ -116,7 +116,7 @@ Output port dış katmanda bulunan bir output adaptör tarafından implement edi
 Ayrıca input ve output portları sayesinde bir sisteme verinin nerden geldiğini ve sistem tarafından oluşturulan verilerin nasıl dışarıya
 aktarıldığını rahatlıkla tespit edebiliriz.
 
-### 4. Input & Output Adapters
+##### *4. Input & Output Adapters*
 
 Hexagonal mimaride adaptörler en dıştaki katmanları oluşturur. Uygulamanın çekirdeğinin bir parçası değillerdir fakat input ve output portları
 üzerinden dolaylı olarak uygulama ile iletişime geçerler.
