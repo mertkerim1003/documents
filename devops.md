@@ -18,6 +18,7 @@ yardımcı olmaktadır.
 
 Geliştirmek veya eklenmek istenen özellik hakkında halihazırda bulunan issue templatelerinden yararlanarak
 detaylı bir issue oluşturulmalıdır. Oluşturulan issue:
+
 - En az 1 kişiye atanmalı
 - Uygun label'ı içermeli
 - Bir projeye bağlanmalı
@@ -31,7 +32,7 @@ ki ekibin kimin ne şu anda ne yaptığıyla ilgili genel bir fikri olabilsin.
 
 Eğer bu issue ile ilk defa çalışmaya başlandıysa ona ait bir branch oluşturulmalı. Branch adı dokümantasyonlar için
 **doc-issueKodu**, frontend için **f-issueKodu** ve backend için **b-issueKodu** olmalıdır. Issue kodları
-başlığın yanında bulunan # işaretiyle başlayan sayılardır.
+başlığın yanında bulunan **`#`** işaretiyle başlayan sayılardır.
 
 ### Testler
 
@@ -68,4 +69,5 @@ etmeleri kendileri için ve proje için büyük öneme sahiptir.
 ### Deployment
 
 Her repositorynin master (veya main) branch'i o projenin son halini temsil eder ve çalışabilir durumda olmalıdır.
+
 Otomatik deployment sayesinde ana branchlerde bir değişiklik yapıldığında demo sunucularına deploy edilir.
