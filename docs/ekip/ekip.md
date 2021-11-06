@@ -1,4 +1,4 @@
-# Ekibimiz
+# Ekip
 
 ### [Aysema Mermer](https://github.com/aysemamermer) - Backend
 - Ekip #5 Üyesi
