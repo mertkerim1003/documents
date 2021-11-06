@@ -1,5 +1,7 @@
 # Sorumluluklar
 
+<img style="width: 100%;" src="https://media2.giphy.com/media/MCZ39lz83o5lC/200w.webp?cid=dda24d501096e0f73ed5d3eb69085fce03e1918f45442a8f&rid=200w.webp&ct=g" />
+
 SOTAS ekibinde yer alan her ekip üyesinin sorumlulukları bulunmaktadır.
 Rolü gereği daha farklı sorumlulukları bulunabilir.
 

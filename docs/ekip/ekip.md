@@ -1,4 +1,5 @@
 # Ekip
+<img style="width: 100%;" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia1.tenor.com%2Fimages%2F59ee96dc46583e446fe633410fc95566%2Ftenor.gif%3Fitemid%3D4497288&f=1&nofb=1" />
 
 ### [Aysema Mermer](https://github.com/aysemamermer) - Backend
 - Ekip #5 Üyesi
